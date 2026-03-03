@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Climático de Barquisimeto | Zoireth Liendo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav>
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="Zoireth Liendo" style="height: 40px;">
+        </div>
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../projects.html" class="active">Projects</a></li>
+            <li><a href="../projects/barquisimeto-climate.html" title="English" class="nav-icon">🌎 EN</a></li>
+            <li>
+                <button id="theme-toggle" class="nav-icon" title="Cambiar modo claro/oscuro">🔆</button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!-- PROJECT HERO -->
+<section class="project-header">
+    <h1>Cuando el Frío Batió Más Récords que el Calor</h1>
+    <p class="subtitle">
+        Un análisis en Python de 10 años de datos de temperatura de NASA que revela una volatilidad climática inesperada en Barquisimeto, Venezuela.
+    </p>
+</section>
+
+<!-- EXECUTIVE OVERVIEW -->
+<section class="analysis-block">
+    <h3>Resumen Ejecutivo</h3>
+    <p>
+        Los relatos climáticos suelen centrarse en el aumento del calor. Pero al comparar los datos de temperatura
+        de 2025 para Barquisimeto con una línea base de 10 años (2015–2024), emergió un patrón sorprendente:
+        los extremos de frío superaron a los de calor. De los 52 días récord identificados, 28 rompieron
+        récords de frío y solo 24 rompieron récords de calor — lo que sugiere que la historia real no es
+        una simple tendencia de calentamiento, sino una mayor <em>volatilidad</em> de temperatura.
+    </p>
+    <p>
+        Este proyecto fue desarrollado como parte de un curso de Ciencia de Datos Avanzada con Python, utilizando
+        datos reales de temperatura diaria del proyecto NASA Power y un pipeline analítico reproducible.
+    </p>
+</section>
+
+<!-- KEY METRICS -->
+<section class="analysis-block">
+    <h3>Hallazgos Clave</h3>
+    <ul class="key-metrics">
+        <li>
+            <strong>52 días récord en 2025</strong> — de los 365 días del año analizados.
+        </li>
+        <li>
+            <strong>28 días rompieron récords de frío</strong> vs. 24 que rompieron récords de calor —
+            más eventos extremos de frío que de calor, un resultado contraintuitivo para una ciudad semiárida.
+        </li>
+        <li>
+            <strong>Volatilidad aumentada, no solo calentamiento:</strong> los datos apuntan a oscilaciones
+            de temperatura más amplias, no a un cambio climático en una sola dirección.
+        </li>
+        <li>
+            <strong>Metodología reproducible:</strong> el pipeline completo — desde los datos crudos de NASA
+            hasta la visualización publicada — está disponible como Jupyter Notebook abierto.
+        </li>
+    </ul>
+</section>
+
+<!-- VISUALIZATION -->
+<section class="analysis-block">
+    <h3>Visualización de Registros de Temperatura</h3>
+    <p>
+        El gráfico muestra el rango de temperatura de la línea base de 10 años (máximas y mínimas históricas
+        para cada día del año), con los días récord de 2025 superpuestos como puntos de dispersión.
+        Los puntos rojos indican días donde 2025 superó el máximo histórico; los azules donde cayó
+        por debajo del mínimo histórico.
+    </p>
+    <div style="text-align: center; margin: 30px 0;">
+        <img
+            src="../assets/images/barquisimeto_temperature_records.png"
+            alt="Registros de temperatura diaria en Barquisimeto: línea base 2015–2024 con anomalías de 2025"
+            style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);"
+        >
+        <p style="font-size: 0.85rem; color: var(--text-muted, #888); margin-top: 10px;">
+            Rango de temperatura diaria para Barquisimeto (línea base 2015–2024) con anomalías de 2025 destacadas.
+            Fuente de datos: NASA Power.
+        </p>
+    </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="analysis-block">
+    <h3>Enfoque Analítico</h3>
+    <p>
+        <strong>Fuente de Datos:</strong> Proyecto NASA Power — datos diarios de temperatura superficial
+        (T<sub>max</sub> y T<sub>min</sub>) para Barquisimeto, Venezuela (2015–2025).<br><br>
+        <strong>Metodología:</strong>
+    </p>
+    <ul>
+        <li>Carga y limpieza de 10 años de registros de temperatura diaria, eliminando el 29 de febrero para una comparación consistente de 365 días.</li>
+        <li>Cálculo de las máximas y mínimas históricas para cada día del calendario durante el período base 2015–2024.</li>
+        <li>Identificación de los días de 2025 donde la temperatura diaria máxima superó el récord histórico, o la mínima cayó por debajo del récord histórico.</li>
+        <li>Visualización de resultados como gráfico de rango de temperatura con puntos de anomalía, exportado como PNG para integración en dashboards.</li>
+    </ul>
+    <p>
+        <strong>Herramientas:</strong> Python (pandas, matplotlib, folium) · Jupyter Notebook · NASA Power API · GitHub Pages
+    </p>
+</section>
+
+<!-- CALL TO ACTION -->
+<section id="download">
+    <p>
+        <strong>Ver el notebook completo y el código reproducible en GitHub:</strong><br>
+        <a href="https://github.com/zoirethl/barquisimeto-weather-dashboard" target="_blank">Barquisimeto Weather Analysis</a>
+    </p>
+    <p style="margin-top: 16px;">
+        <strong>¿Te interesa un análisis similar para tus proyectos?</strong><br>
+        <a href="../index.html">Conectemos</a>
+    </p>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-icons">
+        <a href="mailto:zoirethl@gmail.com" title="Email">
+            <img src="../assets/images/gmail.png" alt="Email" class="footer-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/zoireth/" target="_blank" title="LinkedIn">
+            <img src="../assets/images/InBug-Black.png" alt="LinkedIn" class="footer-icon" id="linkedin-icon">
+        </a>
+    </div>
+    <p>&copy; 2026 Zoireth Liendo. Todos los derechos reservados.</p>
+</footer>
+
+<!-- SCRIPT LIGHT/DARK MODE -->
+<script>
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '🌒';
+} else {
+    toggleBtn.textContent = '🔆';
+}
+
+toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    toggleBtn.textContent = body.classList.contains('dark-mode') ? '🌒' : '🔆';
+    updateLinkedInIcon();
+});
+</script>
+
+<!-- SCRIPT ICON LIGHT/DARK -->
+<script>
+const linkedinIcon = document.getElementById('linkedin-icon');
+
+function updateLinkedInIcon() {
+    linkedinIcon.src = document.body.classList.contains('dark-mode') ?
+        '../assets/images/InBug-White.png' :
+        '../assets/images/InBug-Black.png';
+}
+
+window.addEventListener('DOMContentLoaded', updateLinkedInIcon);
+</script>
+
+</body>
+</html>

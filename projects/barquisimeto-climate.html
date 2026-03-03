@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barquisimeto Climate Anomaly Analysis | Zoireth Liendo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav>
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="Zoireth Liendo" style="height: 40px;">
+        </div>
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../projects.html" class="active">Projects</a></li>
+            <li><a href="../projects-es/barquisimeto-climate-es.html" title="Español" class="nav-icon">🌎 ES</a></li>
+            <li>
+                <button id="theme-toggle" class="nav-icon" title="Toggle Light/Dark Mode">🔆</button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!-- PROJECT HERO -->
+<section class="project-header">
+    <h1>When Cold Broke More Records Than Heat</h1>
+    <p class="subtitle">
+        A Python-driven analysis of 10 years of NASA temperature data revealing unexpected climate volatility in Barquisimeto, Venezuela.
+    </p>
+</section>
+
+<!-- EXECUTIVE OVERVIEW -->
+<section class="analysis-block">
+    <h3>Executive Overview</h3>
+    <p>
+        Climate narratives often focus on rising heat. But when 2025 temperature data for Barquisimeto was compared
+        against a 10-year baseline (2015–2024), a surprising pattern emerged: cold extremes outpaced heat extremes.
+        Out of 52 record-breaking days identified, 28 broke cold records and only 24 broke heat records — suggesting
+        that the real story is not a simple warming trend, but increased temperature <em>volatility</em>.
+    </p>
+    <p>
+        This project was built as part of an Advanced Data Science with Python course, using real NASA Power
+        daily temperature data and a reproducible analytical pipeline.
+    </p>
+</section>
+
+<!-- KEY METRICS -->
+<section class="analysis-block">
+    <h3>Key Findings</h3>
+    <ul class="key-metrics">
+        <li>
+            <strong>52 record-breaking days in 2025</strong> — out of 365 calendar days analyzed.
+        </li>
+        <li>
+            <strong>28 days broke cold records</strong> vs. 24 that broke heat records —
+            more extreme cold events than extreme heat, a counterintuitive result for a semi-arid city.
+        </li>
+        <li>
+            <strong>Increased volatility, not just warming:</strong> the data points to wider temperature swings
+            rather than a single directional climate shift.
+        </li>
+        <li>
+            <strong>Reproducible methodology:</strong> the full pipeline — from raw NASA data to published visualization —
+            is available as an open Jupyter Notebook.
+        </li>
+    </ul>
+</section>
+
+<!-- VISUALIZATION -->
+<section class="analysis-block">
+    <h3>Temperature Record Visualization</h3>
+    <p>
+        The chart below shows the 10-year baseline temperature envelope (record highs and lows for each day of the year),
+        with 2025 record-breaking days overlaid as scatter points. Red dots indicate days where 2025 exceeded the
+        historical high; blue dots where it fell below the historical low.
+    </p>
+    <div style="text-align: center; margin: 30px 0;">
+        <img
+            src="../assets/images/barquisimeto_temperature_records.png"
+            alt="Barquisimeto Daily Temperature Records: Baseline 2015–2024 with 2025 Record-Breaking Days"
+            style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);"
+        >
+        <p style="font-size: 0.85rem; color: var(--text-muted, #888); margin-top: 10px;">
+            Daily temperature envelope for Barquisimeto (2015–2024 baseline) with 2025 anomalies highlighted.
+            Data source: NASA Power.
+        </p>
+    </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="analysis-block">
+    <h3>Analytical Approach</h3>
+    <p>
+        <strong>Data Source:</strong> NASA Power Project — daily surface temperature data (T<sub>max</sub> and T<sub>min</sub>) for Barquisimeto, Venezuela (2015–2025).<br><br>
+        <strong>Methodology:</strong>
+    </p>
+    <ul>
+        <li>Loaded and cleaned 10 years of daily temperature records, removing leap-day (Feb 29) for consistent 365-day comparison.</li>
+        <li>Computed record highs and record lows for each calendar day across the 2015–2024 baseline period.</li>
+        <li>Identified 2025 days where the daily high exceeded the historical record high, or the daily low fell below the historical record low.</li>
+        <li>Visualized results as a temperature envelope chart with anomaly scatter points, exported as PNG for dashboard embedding.</li>
+    </ul>
+    <p>
+        <strong>Tools:</strong> Python (pandas, matplotlib, folium) · Jupyter Notebook · NASA Power API · GitHub Pages
+    </p>
+</section>
+
+<!-- CALL TO ACTION -->
+<section id="download">
+    <p>
+        <strong>View the full notebook and reproducible code on GitHub:</strong><br>
+        <a href="https://github.com/zoirethl/barquisimeto-weather-dashboard" target="_blank">Barquisimeto Weather Analysis</a>
+    </p>
+    <p style="margin-top: 16px;">
+        <strong>Interested in similar data analysis for your projects?</strong><br>
+        <a href="../index.html">Let's connect</a>
+    </p>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-icons">
+        <a href="mailto:zoirethl@gmail.com" title="Email">
+            <img src="../assets/images/gmail.png" alt="Email" class="footer-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/zoireth/" target="_blank" title="LinkedIn">
+            <img src="../assets/images/InBug-Black.png" alt="LinkedIn" class="footer-icon" id="linkedin-icon">
+        </a>
+    </div>
+    <p>&copy; 2026 Zoireth Liendo. All rights reserved.</p>
+</footer>
+
+<!-- SCRIPT LIGHT/DARK MODE -->
+<script>
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '🌒';
+} else {
+    toggleBtn.textContent = '🔆';
+}
+
+toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    toggleBtn.textContent = body.classList.contains('dark-mode') ? '🌒' : '🔆';
+    updateLinkedInIcon();
+});
+</script>
+
+<!-- SCRIPT ICON LIGHT/DARK -->
+<script>
+const linkedinIcon = document.getElementById('linkedin-icon');
+
+function updateLinkedInIcon() {
+    linkedinIcon.src = document.body.classList.contains('dark-mode') ?
+        '../assets/images/InBug-White.png' :
+        '../assets/images/InBug-Black.png';
+}
+
+window.addEventListener('DOMContentLoaded', updateLinkedInIcon);
+</script>
+
+</body>
+</html>
