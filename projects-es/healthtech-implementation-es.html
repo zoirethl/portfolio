@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Implementación HealthTech | Zoireth Liendo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav>
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="Zoireth Liendo" style="height: 40px;">
+        </div>
+        <ul>
+            <li><a href="../index-es.html">Sobre Mí</a></li>
+            <li><a href="../projects-es.html" class="active">Proyectos</a></li>
+            <li><a href="../credentials-es.html">Credenciales</a></li>
+            <li><a href="../projects/healthtech-implementation.html" title="English" class="nav-icon">🌎 EN</a></li>
+            <li>
+                <button id="theme-toggle" class="nav-icon" title="Cambiar Modo Claro/Oscuro">🔆</button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!-- PROJECT HERO -->
+<section class="project-header">
+    <h1>Análisis de Implementación HealthTech</h1>
+    <p class="subtitle">
+        Análisis de eficiencia de costos, tiempos de implementación y optimización del desempeño de equipo para una empresa B2B SaaS.
+    </p>
+    <p style="margin-top: 15px;">
+        <a href="https://github.com/zoirethl/healthtech-saas-dashboard" target="_blank" class="link-btn" style="background: #24292f; color: white; border: none;"> Ver en GitHub</a>
+        <a href="https://lookerstudio.google.com/s/iZCNAQmdTns" target="_blank" class="link-btn" style="margin-left: 10px;"> Dashboard en Vivo</a>
+    </p>
+</section>
+
+<!-- EXECUTIVE OVERVIEW -->
+<section class="analysis-block">
+    <h3>Resumen Ejecutivo</h3>
+    <p>
+        Este análisis evalúa el desempeño de implementación de una empresa HealthTech SaaS durante el período 2024–2025.
+        Los hallazgos clave revelan una sobreestimación significativa de costos (63.8% menos en costos reales para proyectos completados)
+        y una incorporación eficiente para segmentos SMB. Sin embargo, los clientes empresariales muestran un 29.6% más de horas reales
+        que las estimadas, mientras que el 87.4% del esfuerzo del equipo se destina a soporte en lugar de actividades de implementación.
+        El análisis proporciona recomendaciones accionables para optimizar la asignación de recursos, mejorar la precisión de estimaciones
+        y escalar operaciones de manera eficiente.
+    </p>
+    <p style="margin-top: 12px;">
+        <strong>Desafío de Negocio:</strong> La implementación se factura como un costo único, mientras que el soporte post-lanzamiento está cubierto por las suscripciones mensuales.
+        Sin visibilidad sobre si las suscripciones cubren los costos de soporte, el negocio no podía identificar cuentas no rentables
+        ni optimizar precios. Este dashboard se construyó para responder: <em>¿Estamos implementando cuentas a tiempo y dentro del presupuesto?
+        ¿Los precios de suscripción cubren los costos de soporte? ¿Qué cuentas son rentables a largo plazo?</em>
+    </p>
+</section>
+
+<!-- INTERACTIVE DASHBOARD -->
+<h3 style="text-align: center; margin: 40px 0 20px 0;">Dashboard de Desempeño de Implementación</h3>
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+    <iframe width="1000" height="600" src="https://lookerstudio.google.com/embed/reporting/40c8c19d-504c-4348-865a-825ffa1f0a1a/page/7OvsF" frameborder="0" style="border:0; max-width: 100%;" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+</div>
+
+<!-- KEY METRICS -->
+<section class="analysis-block">
+    <h3>Métricas Clave e Insights</h3>
+    <p>El dashboard rastrea KPIs críticos de implementación en cuatro dimensiones estratégicas:</p>
+    <ul class="key-metrics">
+        <li><strong>Eficiencia de Costos:</strong> Proyectos completados lograron costos reales 63.8% menores a los estimados ($37.7K real vs $104.3K estimado). Cuentas grandes mostraron la mayor variación con costos reales 73% por debajo de estimaciones.</li>
+        <li><strong>Tiempo de Implementación:</strong> Cuentas pequeñas y medianas completaron 51–65% más rápido que lo estimado, mientras que cuentas grandes requirieron 29.6% más horas, destacando brechas de complejidad en estimaciones empresariales.</li>
+        <li><strong>Asignación de Recursos:</strong> 87.4% de las horas del equipo están dedicadas a actividades de soporte, con solo 12.6% enfocadas en implementación. CSMs y especialistas de soporte registraron 3.2K horas cada uno versus 2.0–2.3K para ingenieros.</li>
+        <li><strong>Desempeño Financiero:</strong> Churn mensual de 0.8% (58.7% por debajo del estimado), NRR estable en 1.0–1.01 desde abril, LTV de $433.5K, y CAC de $626.1 con período de recuperación de 3.6 meses.</li>
+    </ul>
+</section>
+
+<!-- BUSINESS INSIGHTS -->
+<section class="analysis-block">
+    <h3>Insights de Negocio Clave</h3>
+    <ul class="key-metrics">
+        <li><strong>13 cuentas identificadas como churn confirmado</strong> — todas con Support ROI &lt; 1.0 y Net Customer Value negativo. La sensibilidad al precio fue la razón principal de churn (62% de las cuentas que cancelaron).</li>
+        <li><strong>Las cuentas pequeñas son sistemáticamente no rentables post-lanzamiento</strong> — Support ROI promedio de 0.6–0.8 vs 1.4–2.0 para cuentas grandes. El precio de suscripción para cuentas pequeñas no cubre los costos de soporte.</li>
+        <li><strong>NRR se estabilizó por encima del 100% desde abril de 2025</strong> — impulsado por programa de upsell dirigido a las 10 cuentas con mayor ROI.</li>
+        <li><strong>La eficiencia de implementación varía significativamente por tamaño de cuenta</strong> — Las cuentas grandes toman 2.1x más tiempo que lo estimado en promedio, mientras que las pequeñas terminan por debajo de la estimación.</li>
+    </ul>
+</section>
+
+<!-- STRATEGIC APPLICATIONS -->
+<section class="analysis-block">
+    <h3>Aplicaciones Estratégicas</h3>
+    <p>Estos insights permiten decisiones basadas en datos en múltiples funciones comerciales:</p>
+    <ul class="key-metrics">
+        <li><strong>Ventas y Estimación:</strong> Revisar modelos de estimación empresarial para reflejar 29.6% más horas reales, mejorando predictibilidad de márgenes y expectativas del cliente.</li>
+        <li><strong>Optimización de Recursos:</strong> Rebalancear la asignación del 87.4% de soporte creando equipos dedicados de implementación y automatizando tareas recurrentes.</li>
+        <li><strong>Escalabilidad:</strong> Aprovechar eficiencia SMB (implementaciones 51–65% más rápidas) como ventaja competitiva para expandir participación en segmentos menores.</li>
+        <li><strong>Estrategia de Retención:</strong> Capitalizar churn por debajo del estimado (0.8%) y NRR estable para fortalecer pronósticos de renovación y programas de éxito del cliente.</li>
+        <li><strong>Estrategia de Precios:</strong> Abordar la falta de rentabilidad sistemática en cuentas pequeñas revisando los niveles de suscripción o introduciendo tarifas mínimas de soporte.</li>
+    </ul>
+</section>
+
+<!-- TOOLS & METHODOLOGY -->
+<section class="analysis-block">
+    <h3>Herramientas y Metodología</h3>
+    <p>
+        <strong>Plataforma:</strong> Looker Studio, Google Sheets, Python<br>
+        <strong>Arquitectura de Datos:</strong> Blend multi-hoja con RawData (registros de tareas), CX Team (salarios), Accounts (resúmenes de cuentas), Upsells (eventos de expansión)<br>
+        <strong>Técnicas:</strong> Análisis de varianza de costos, benchmarking de tiempos, análisis de cohortes, modelado LTV/CAC, cálculo de NRR con SUMPRODUCT, análisis de ROI de soporte<br>
+        <strong>Cálculos Clave:</strong>
+        <ul style="margin-top: 8px; margin-left: 20px;">
+            <li><code>Support ROI % = Ingresos por Suscripción / Costo de Soporte</code></li>
+            <li><code>Net Customer Value = Ingresos por Suscripción − Costo Total de Servicio</code></li>
+            <li><code>NRR % = (MRR Inicial − MRR Perdido + MRR Expansión) / MRR Inicial</code></li>
+            <li><code>Eficiencia de Costo % = REDONDEAR((Costo Real / Costo Estimado) × 100, 1)</code></li>
+        </ul>
+        <br>
+        <strong>Repositorio:</strong> <a href="https://github.com/zoirethl/healthtech-saas-dashboard" target="_blank">github.com/zoirethl/healthtech-saas-dashboard</a><br>
+        <strong>Dataset:</strong> 120 cuentas de clientes, 9 miembros del equipo, 2 años de registros de tareas, 24 eventos de upsell, 13 eventos de churn (anónimos, cifras financieras simuladas calibradas con benchmarks de HealthTech)
+    </p>
+</section>
+
+<!-- RECOMMENDATIONS -->
+<section class="analysis-block">
+    <h3>Recomendaciones Clave</h3>
+    <ul class="key-metrics">
+        <li><strong>Modelo de Estimación Empresarial:</strong> Implementar framework de estimación basado en datos históricos de cuentas grandes considerando factores de complejidad (integraciones, número de usuarios, alcance personalizado).</li>
+        <li><strong>Rebalanceo Implementación vs Soporte:</strong> Crear equipo dedicado de onboarding separado del soporte continuo; apuntar a división 70/30 en 12 meses.</li>
+        <li><strong>Automatización de Autoservicio:</strong> Reducir horas orientadas al cliente (actualmente 2,047–3,201 por miembro) mediante flujos de trabajo automatizados y portales para clientes.</li>
+        <li><strong>Estrategia de Precios:</strong> Aprovechar subejecución de costos del 63.8% como diferenciador competitivo en propuestas SMB; revisar precios para cuentas pequeñas para asegurar rentabilidad.</li>
+        <li><strong>Programa de Upsell:</strong> Expandir iniciativas de upsell dirigidas a las 10 cuentas con mayor ROI que impulsaron la estabilización del NRR por encima del 100%.</li>
+    </ul>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="analysis-block">
+    <p style="margin: 0;">
+        <strong>¿Interesado en análisis similares para tu negocio?</strong><br>
+        <a href="../index-es.html">Conectemos</a>
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-icons">
+        <a href="mailto:zoirethl@gmail.com" title="Email">
+            <img src="../assets/images/gmail.png" alt="Email" class="footer-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/zoireth/" target="_blank" title="LinkedIn">
+            <img src="../assets/images/InBug-Black.png" alt="LinkedIn" class="footer-icon" id="linkedin-icon">
+        </a>
+    </div>
+    <p>&copy; 2026 Zoireth Liendo. Todos los derechos reservados.</p>
+</footer>
+
+<!-- SCRIPT LIGHT/DARK MODE -->
+<script>
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '🌒';
+} else {
+    toggleBtn.textContent = '🔆';
+}
+
+toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    toggleBtn.textContent = body.classList.contains('dark-mode') ? '🌒' : '🔆';
+    updateLinkedInIcon();
+});
+
+const linkedinIcon = document.getElementById('linkedin-icon');
+
+function updateLinkedInIcon() {
+    if (linkedinIcon) {
+        linkedinIcon.src = document.body.classList.contains('dark-mode') ?
+            '../assets/images/InBug-White.png' :
+            '../assets/images/InBug-Black.png';
+    }
+}
+
+window.addEventListener('DOMContentLoaded', updateLinkedInIcon);
+</script>
+
+</body>
+</html>
