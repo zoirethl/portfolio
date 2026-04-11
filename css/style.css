@@ -33,8 +33,17 @@ body.dark-mode a {
 body.dark-mode a:hover {
     color: var(--link-hover);
 }
-
-
+/* =========================
+   PROFILE PIC
+========================= */
+.profile-pic {
+  width: 200px;          
+  height: 200px;
+  border-radius: 50%;    
+  object-fit: cover;     
+  border: 4px solid #f86295;  
+  display: center;
+}
 /* =========================
    BASE
 ========================= */
@@ -98,6 +107,8 @@ nav {
 .logo img {
     height: 40px;
     display: block;
+   border-radius: 50%;
+   
 }
 
 nav ul {
