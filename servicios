@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Folleto de Servicios</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #f1f5f9;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      color: #18112e;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+    }
+
+    .syne { font-family: 'Syne', sans-serif; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(140deg, #0c3d38 0%, #0f766e 40%, #6d28d9 100%);
+      padding: 52px 44px 44px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-top: 18px;
+      white-space: pre-line;
+    }
+
+    .hero p {
+      margin-top: 12px;
+      opacity: 0.85;
+      max-width: 420px;
+      line-height: 1.6;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 40px 44px 0;
+    }
+
+    .eyebrow {
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #8b5cf6;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    /* SERVICES */
+    .card {
+      border-radius: 16px;
+      padding: 26px;
+      margin-bottom: 16px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .pitch {
+      font-style: italic;
+      font-size: 13px;
+      opacity: 0.6;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 12px;
+    }
+
+    li {
+      font-size: 12.5px;
+      color: #475569;
+      display: flex;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    .price {
+      text-align: right;
+      margin-top: 14px;
+      font-weight: 700;
+      color: #0f766e;
+      font-size: 13px;
+    }
+
+    /* STACK */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .pill {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 10px;
+      text-align: center;
+      font-size: 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #475569;
+    }
+
+    /* PROCESS */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .step {
+      background: #f8fafc;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      text-align: center;
+    }
+
+    .num {
+      width: 32px;
+      height: 32px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0d9488, #8b5cf6);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+    }
+
+    /* CTA */
+    .cta {
+      margin: 40px 44px;
+      padding: 30px;
+      border-radius: 16px;
+      background: #18112e;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .cta a {
+      color: #14b8a6;
+      text-decoration: none;
+      font-size: 13px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #475569;
+      opacity: 0.6;
+      padding: 20px 44px 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="badge">Servicios · Automatización & Datos </div>
+
+    <div style="margin-top:10px; opacity:0.7; font-size:13px;">
+      Zoireth Liendo · Automation & Data Consultant Engineer
+    </div>
+
+    <h1 class="syne">
+      Automatización de procesos y dashboards para tu negocio
+    </h1>
+
+    <p>
+      Transformo datos y procesos manuales en sistemas automáticos simples y eficientes.
+    </p>
+  </div>
+
+  <!-- SERVICES -->
+  <section>
+    <div class="eyebrow">Servicios</div>
+
+    <div class="card">
+      <h3>📊 Reportes y Dashboards</h3>
+      <div class="pitch">Los datos que ya tienes, convertidos en decisiones.</div>
+      <p class="desc">Dashboards en Looker Studio, Power BI o Tableau conectados a tus datos actuales.</p>
+
+      <ul>
+        <li><span class="dot" style="background:#0f766e"></span>Dashboard a medida</li>
+        <li><span class="dot" style="background:#0f766e"></span>Integración con CRM</li>
+        <li><span class="dot" style="background:#0f766e"></span>Actualización automática</li>
+        <li><span class="dot" style="background:#0f766e"></span>Formación incluida</li>
+      </ul>
+
+      <div class="price">Desde 300 €</div>
+    </div>
+
+    <div class="card">
+      <h3>🚗 Automatización de Órdenes de Reparación</h3>
+      <div class="pitch">El papel se queda o no. Especial para talleres mecánicos.</div>
+      <p class="desc">Utiliza un formulario o Digitaliza órdenes físicas usando IA y envíalas directamente a tu sistema.</p>
+
+      <ul>
+        <li><span class="dot" style="background:#7c3aed"></span>OCR + IA</li>
+        <li><span class="dot" style="background:#7c3aed"></span>Formularios personalizados con Fillout</li>
+        <li><span class="dot" style="background:#7c3aed"></span>Integración ERP</li>
+        <li><span class="dot" style="background:#7c3aed"></span>WhatsApp / Email / Telegram o Discord</li>
+        <li><span class="dot" style="background:#7c3aed"></span>Sin cambiar tu proceso</li>
+      </ul>
+
+      <div class="price">Desde 300 €</div>
+    </div>
+
+    <div class="card">
+      <h3>🔔 Recordatorios Automáticos</h3>
+      <div class="pitch">Tus clientes vuelven solos.</div>
+      <p class="desc">Automatiza recordatorios por WhatsApp o Email.</p>
+
+      <ul>
+        <li><span class="dot" style="background:#0f766e"></span>Mensajes automáticos</li>
+        <li><span class="dot" style="background:#0f766e"></span>Segmentación clientes</li>
+        <li><span class="dot" style="background:#0f766e"></span>Reportes</li>
+        <li><span class="dot" style="background:#0f766e"></span>Integrado con CRM</li>
+      </ul>
+
+      <div class="price">Desde 200 €</div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section>
+    <div class="eyebrow">Herramientas</div>
+    <div class="grid">
+      <div class="pill">Looker</div>
+      <div class="pill">Power BI</div>
+      <div class="pill">Tableau</div>
+      <div class="pill">Make</div>
+      <div class="pill">SQL</div>
+      <div class="pill">Python</div>
+      <div class="pill">HubSpot</div>
+      <div class="pill">Salesforce</div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section>
+    <div class="eyebrow">Cómo trabajo</div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <strong>Diagnóstico</strong>
+        <p>Analizo tu proceso actual</p>
+      </div>
+
+      <div class="step">
+        <div class="num">2</div>
+        <strong>Propuesta</strong>
+        <p>Defino solución y coste</p>
+      </div>
+
+      <div class="step">
+        <div class="num">3</div>
+        <strong>Entrega</strong>
+        <p>Implemento y te formo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <div>
+      <h2>¿Hablamos?</h2>
+      <p style="opacity:0.6; font-size:13px;">Sin compromiso</p>
+    </div>
+
+    <div>
+      <a href="mailto:zoireth@zoireth.com">zoireth@zoireth.com</a>
+      <a href="tel:+34123456789">+34 603830772</a>
+      <a href="https://www.zoireth.com"></a>
+    </div>
+  </div>
+
+  <footer>
+    Zoireth Liendo · Automatización & Datos
+  </footer>
+
+</div>
+
+</body>
+</html>
